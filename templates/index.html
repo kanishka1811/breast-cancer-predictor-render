@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style2.css') }}">
+</head>
+
+<body>
+
+    <div class="split-screen">
+        <div class="left">
+            <section class="copy">
+                <h1>Breast Cancer Predictor</h1>
+                <p id="p1">Aimed at spreading awareness, it predicts whether cancer is <br><strong>Benign</strong> or <strong>Malignant</strong>.</p>
+                <p id="p2"> <strong>Benign</strong> tumors tend to grow slowly and do not spread.<p>
+                <p id="p3"><strong>Malignant</strong> tumors can grow rapidly, invade and destroy  nearby normal <br> tissues, and spread throughout the body.</p>
+                <p id="p4"> The predictor uses the "K-Nearest Neighbors" machine learning algorithm and <br> has an accuracy of <strong>97.85%</strong>. </p>
+                <p id="p5">However, it is recommended that you refer to a medical report before reaching any conclusions. </p>
+            </section>
+        </div>
+
+        <div class="right">
+            <form method="post" action="/predict">
+
+                 <section class=prediction>
+
+                     <strong>{{prediction_text}}</strong>
+
+                </section>
+
+
+                <section class="copy">
+
+                    <h2>Please enter your medical details</h2>
+
+                </section>
+
+
+                <div class="container">
+                    <label>Clump Thickness</label>
+                    <input type="text" name="Clump Thickness" required>
+                </div>
+
+                <div class="container">
+                    <label>Uniformity of Cell Size</label>
+                    <input type="text" name="Uniformity of Cell Size" required>
+                </div>
+
+                <div class="container">
+                    <label>Uniformity of Cell Shape</label>
+                    <input type="text" name="Uniformity of Cell Shape" required>
+                </div>
+
+                <div class="container">
+                    <label>Marginal Adhesion</label>
+                    <input type="text" name="Marginal Adhesion" required>
+                </div>
+
+                <div class="container">
+                    <label>Single Epithelial Cell Size</label>
+                    <input type="text" name="Single Epithelial Cell Size" required>
+                </div>
+
+                <div class="container">
+                    <label>Bare Nuclei</label>
+                    <input type="text" name="Bare Nuclei" required>
+                </div>
+
+                <div class="container">
+                    <label>Bland Chromatin</label>
+                    <input type="text" name="Bland Chromatin" required>
+                </div>
+
+                <div class="container">
+                    <label>Normal Nucleoli</label>
+                    <input type="text" name="Normal Nucleoli" required>
+                </div>
+
+                <div class="container">
+                    <label>Mitosis</label>
+                    <input type="text" name="Mitosis" required>
+                </div>
+
+
+                <button class="signup-btn" type="submit">Predict</button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <footer>
+
+        <p>Copyright &copy; 2022 <strong>Kanishka Katiyar</strong>. All rights reserved.</p>
+
+    </footer>
+
+
+
+
+</body>
+
+</html>

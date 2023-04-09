@@ -1,0 +1,190 @@
+body {
+    margin: 0; /* by default there is some margin */
+    padding: 0;
+    font-family: sans-serif;
+
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+
+}
+h1{
+color:white;
+
+}
+
+h2{
+color: #172E5C;
+margin-bottom: 35px;
+
+}
+
+
+
+.copy strong{
+    color: #F05F2E;
+}
+
+
+
+.split-screen{
+    display: flex;
+    flex-direction: column;
+}
+
+.left {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #E2EDF5;
+}
+
+
+.left{
+    background: url('/static/img/flower2.jpeg');
+    background-size: cover;
+}
+
+
+.right form{
+    width: 328px;
+
+}
+
+form input[type="text"]{
+    display:block;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 1px solid #c4c4c4;
+    padding: 0.5em;
+    margin-bottom: 1.25rem;
+    font-size: 0.875rem;
+}
+
+
+input:hover{
+
+    background: #FFD8CC;
+}
+
+
+
+label{
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1.0rem;
+}
+
+.signup-btn{
+    display: block;
+    width:100%;
+    background: #567d00;
+    color: white;
+    font-weight: 700;
+    border: none;
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+
+.signup-btn:hover{
+    background: #F08F6E;
+    cursor:pointer;
+}
+
+.prediction{
+    margin-top: 55px;
+    margin-bottom: 45px;
+    color: #72A600;
+    font-size: 25px;
+
+}
+
+footer{
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    background: #213A4D;
+    color: #C9C8C3;
+    text-align: center;
+    padding: 2px;
+    font-size: 18px;
+
+}
+
+footer strong{
+    color: white;
+}
+
+
+
+
+
+@media screen and (min-width: 900px){
+    .split-screen{
+        flex-direction: row;
+    }
+    .left, .right{
+        display: flex;
+        width: 50%;
+        height: auto;
+    }
+
+    .left{
+
+    padding: 25px;
+    }
+
+    h1{
+    margin-top: 120px;
+    margin-bottom: 30px;
+    font-size: 40px;
+    color: white;
+    }
+
+    .copy p{
+
+    text-align: center;
+    font-size: 20px;
+
+    }
+
+    #p1{
+
+    text-align: center;
+    margin-bottom: 50px;
+    }
+
+    #p4{
+
+    margin-top: 50px;
+
+    }
+
+
+    .right form{
+        margin-bottom: 25px;
+    }
+
+    .signup-btn{
+    margin-top: 45px;
+    margin-bottom: 30px;
+}
+
+}
+
+
